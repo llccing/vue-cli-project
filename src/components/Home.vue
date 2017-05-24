@@ -1,9 +1,22 @@
 <template>
-  <div class="hello">
-    {{msg}}
+  <div class="home">
+    <div class="left">
+      <ul>
+        <li>
+          <router-link to="/login"><h2>login</h2></router-link>
+        </li>
+        <li>
+          <router-link to="/"><h2>home</h2></router-link>
+        </li>
+        <li>
+          <router-link to="/hello"><h2>Hello</h2></router-link>
+        </li>
 
-    <div>
-      <router-link to="/login"><h2>login</h2></router-link>
+      </ul>
+
+    </div>
+    <div class="right">
+      {{msg}}
     </div>
   </div>
 
@@ -23,21 +36,17 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
-    font-weight: normal;
+  .home {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .left,.right{
+    float: left;
   }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
+  ul{
+    list-style: none;
+    margin:0;
+    padding:0;
   }
 </style>
