@@ -1,7 +1,13 @@
 <template>
   <div class="hello">
     {{msg}}
+
+    <div>
+      <router-link to="/login"><h2>login</h2></router-link>
+    </div>
   </div>
+
+
 </template>
 
 <script>

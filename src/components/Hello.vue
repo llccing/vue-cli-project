@@ -19,6 +19,7 @@
     </ul>
 
     <router-link to="/home"><h2>home</h2></router-link>
+    <router-link to="/login"><h2>login</h2></router-link>
   </div>
 </template>
 
