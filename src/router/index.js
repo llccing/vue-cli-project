@@ -4,26 +4,28 @@ import App from '../App'
 
 import store from '../store'
 
-// import Hello from '@/components/Hello'
-// import Home from '@/components/Home'
-// import Login from '@/components/Login'
-
 Vue.use(Router)
 
 const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
       component: App,
       children: [
         {
           path: '/login',
           meta: {auth: false},
-          component: resolve => require(['../components/Login'], resolve)
+          component: resolve => require(['../pages/login'], resolve)
+        }, {
+          path: '/signout',
+          component: resolve => require(['../pages/signout'], resolve)
         }, {
           path: '/home',
-          component: resolve => require(['../components/Home'], resolve)
+          component: resolve => require(['../pages/home'], resolve)
+        }, {
+          path: '/',
+          meta: {auth: false},
+          component: resolve => require(['../pages/index'], resolve)
         }, {
           path: '*', // 其他页面强制跳转登录页
           redirect: '/login'
