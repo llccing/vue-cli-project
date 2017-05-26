@@ -37,7 +37,7 @@ const router = new Router({
 
 router.beforeEach(({meta, path}, form, next) => {
   var {auth = true} = meta
-  var isLogin = Boolean(store.state.user.id)
+  var isLogin = Boolean(store.state.user.name)
   // var isLogin = true
 
   if (auth && !isLogin && path !== '/login') {

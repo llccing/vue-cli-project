@@ -1,8 +1,8 @@
 <template>
     <div class="login">
-        <v-header title="登录">
-            <v-router slot="left" to="/">返回</v-router>
-        </v-header>
+        <header title="登录">
+            <router-link slot="left" to="/">返回</router-link>
+        </header>
 
         <form class="form-inline" v-on:submit.prevent="submit">
             <div class="form-group">
@@ -19,10 +19,6 @@
             </div>
             <button type="submit" class="btn btn-default">登录</button>
         </form>
-
-        <div>
-            <router-link to="/"><h2>Index</h2></router-link>
-        </div>
     </div>
 </template>
 
