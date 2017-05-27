@@ -23,7 +23,7 @@
     computed: mapState({user: state => state.user}),
     methods: {
       getUsers: () => {
-        axios.get('/apii/users').then(response => {
+        axios.get('/api/users').then(response => {
           alert(response)
         })
       }
