@@ -4,21 +4,19 @@
             <router-link slot="left" to="/">返回</router-link>
         </header>
 
-        <form class="form-inline" v-on:submit.prevent="submit">
-            <div class="form-group">
+        <el-form class="form-inline" label-width="100px">
+            <el-form-item label="姓名">
+                <el-input v-model="form.name" placeholder="输入姓名"></el-input>
                 <div v-if="btn && !form.name">id不能为空</div>
-                <label for="exampleInputName2">Name</label>
-                <input type="text" class="form-control" id="exampleInputName2" v-model="form.name" placeholder="name">
-            </div>
-            <div class="form-group">
-                <div v-if="btn && !form.pass">pass不能为空</div>
+            </el-form-item>
 
-                <label for="exampleInputEmail2">Email</label>
-                <input type="password" class="form-control" id="exampleInputEmail2" v-model="form.pass"
-                       placeholder="pass">
-            </div>
-            <button type="submit" class="btn btn-default">登录</button>
-        </form>
+            <el-form-item label="密码">
+                <el-input v-model="form.pass" placeholder="输入密码"></el-input>
+                <div v-if="btn && !form.pass">pass不能为空</div>
+            </el-form-item>
+
+            <el-button type="primary" @click="submit">登录</el-button>
+        </el-form>
     </div>
 </template>
 

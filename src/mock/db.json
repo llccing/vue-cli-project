@@ -15,10 +15,6 @@
       "name": "张三",
       "age": "json-server",
       "address": "typicode"
-    },{
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
     }
   ],
   "comments": [
