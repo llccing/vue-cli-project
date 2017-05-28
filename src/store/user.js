@@ -7,6 +7,7 @@ export default {
   state: JSON.parse(sessionStorage.getItem('user')) || {},
   mutations: {
     [USER_SIGNIN] (state, user) {
+      debugger
       sessionStorage.setItem('user', JSON.stringify(user))
       Object.assign(state, user)
     },

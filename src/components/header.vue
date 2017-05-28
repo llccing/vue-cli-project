@@ -1,9 +1,11 @@
 <template>
-    <header class="header">
+    <header class="header clear">
         <div class="item left">
             <slot name="left"></slot>
         </div>
-        <div class="title">{{title}}</div>
+        <div class="item middle">
+            <span class="title">{{title}}</span>
+        </div>
         <div class="item right">
             <slot name="right"></slot>
         </div>
@@ -12,7 +14,7 @@
 
 <script>
   export default {
-    name:'v-header',
+    name: 'v-header',
     props: {
       title: {
         type: String,
@@ -22,30 +24,47 @@
   }
 </script>
 
-<style lang="less" scoped>
+<style scoped>
     .header {
+        height: 40px;
+        background-color: #2C8DBB;
+        text-align: center;
+    }
+
+    .middle {
+        display: inline;
         color: #fff;
-        line-height: 38px;
-        background: #222;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
     .item {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-
-        a {
-            color: #fff;
-        }
-
+        line-height: 40px;
     }
 
     .left {
-        left: 10px;
+        float: left;
+    }
+
+    .left a,
+    .right a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .left a:hover,
+    .right a:hover {
+        background: #20495D;
     }
 
     .right {
-        right: 10px;
-    }
-
+        float: right;
     }
 </style>

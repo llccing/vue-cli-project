@@ -1,9 +1,9 @@
 <template>
     <div class="home">
-        <header title="首页">
+        <myHeader title="首页">
             <router-link slot="left" to="/">首页</router-link>
             <router-link slot="right" to="/signout">退出</router-link>
-        </header>
+        </myHeader>
         <div>
             {{user.name}}，欢迎回家
         </div>
@@ -27,6 +27,7 @@
 <script>
   import {mapState} from 'vuex'
   import axios from 'axios'
+  import myHeader from '../components/header.vue'
 
   export default {
     name: 'home',
@@ -45,6 +46,9 @@
           this.users = response.data
         })
       }
+    },
+    components: {
+      myHeader
     }
   }
 </script>

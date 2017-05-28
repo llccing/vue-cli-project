@@ -5,12 +5,14 @@
       "name": "张三",
       "age": "json-server",
       "address": "typicode"
-    },{
+    },
+    {
       "id": 1,
       "name": "张三",
       "age": "json-server",
       "address": "typicode"
-    },{
+    },
+    {
       "id": 1,
       "name": "张三",
       "age": "json-server",
@@ -22,21 +24,25 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
-    },{
+    },
+    {
       "id": 1,
       "body": "some comment",
       "postId": 1
-    },{
+    },
+    {
       "id": 1,
       "body": "some comment",
       "postId": 1
-    },{
+    },
+    {
       "id": 1,
       "body": "some comment",
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "login": {
+    "code": 200,
+    "status": "yes"
   }
 }
