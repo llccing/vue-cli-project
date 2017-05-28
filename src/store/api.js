@@ -1,3 +1,16 @@
+import axios from 'axios'
+
 export default {
-  login: 'api/login'
+  axios: axios,
+  apis: {
+    login: 'api/login',
+    dm: {
+      cities: 'api/cities',
+      streets: 'api/streets',
+      communities: 'api/communities'
+    },
+    zrdj: {
+      list: ''
+    }
+  }
 }

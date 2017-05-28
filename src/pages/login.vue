@@ -23,7 +23,6 @@
 <script>
   import {mapActions} from 'vuex'
   import {USER_SIGNIN} from '../store/user'
-  import axios from 'axios'
   import api from '../store/api'
 
   export default {
@@ -42,8 +41,7 @@
       submit () {
         this.btn = true
         if (!this.form.name || !this.form.pass) return
-        axios.get(api.login).then(response => {
-          debugger
+        api.axios.get(api.apis.login).then(response => {
           if (response.data.status === 'yes' && response.data.code === 200) {
             this.USER_SIGNIN(this.form)
             this.$router.replace({path: '/'})

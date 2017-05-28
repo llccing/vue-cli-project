@@ -4,7 +4,7 @@
         <nav class="navbar navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="login.html">宜昌住房保障大数据平台</a>
+                    <a class="navbar-brand" href="/">宜昌住房保障大数据平台</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -29,9 +29,9 @@
                     <div data-title="zlbt" class="nav-parent">
                         <div class="nav-title">
                             <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-                            <span class="title-name">准入登记管理</span>
+
                             <span class="fa fa-caret-down fa-rotate-0 nav-caret"></span>
-                            <router-link to=""></router-link>
+                            <router-link to="/zrdj"><span class="title-name">准入登记管理</span></router-link>
                         </div> <div class="nav-title">
                             <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
                             <span class="title-name">保障配给规则定制</span>
@@ -49,7 +49,9 @@
         <!-- end sidebar-->
 
         <!-- begin content -->
-        <div id="indexContent" class="content"></div>
+        <router-view id="indexContent" class="content">
+
+        </router-view>
         <!-- end content -->
 
         <!-- begin footer-->

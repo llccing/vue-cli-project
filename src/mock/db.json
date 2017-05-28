@@ -44,5 +44,135 @@
   "login": {
     "code": 200,
     "status": "yes"
+  },
+  "cities": {
+    "code": 200,
+    "data": [
+      {
+        "dmName": "市辖区",
+        "dmCode": "420501"
+      },
+      {
+        "dmName": "西陵区",
+        "dmCode": "420502"
+      },
+      {
+        "dmName": "伍家岗区",
+        "dmCode": "420503"
+      },
+      {
+        "dmName": "点军区",
+        "dmCode": "420504"
+      },
+      {
+        "dmName": "猇亭区",
+        "dmCode": "420505"
+      },
+      {
+        "dmName": "夷陵区",
+        "dmCode": "420506"
+      },
+      {
+        "dmName": "宜昌高新区",
+        "dmCode": "420507"
+      },
+      {
+        "dmName": "远安县",
+        "dmCode": "420525"
+      },
+      {
+        "dmName": "兴山县",
+        "dmCode": "420526"
+      },
+      {
+        "dmName": "秭归县",
+        "dmCode": "420527"
+      },
+      {
+        "dmName": "长阳土家族自治县",
+        "dmCode": "420528"
+      },
+      {
+        "dmName": "五峰土家族自治县",
+        "dmCode": "420529"
+      },
+      {
+        "dmName": "宜都市",
+        "dmCode": "420581"
+      },
+      {
+        "dmName": "当阳市",
+        "dmCode": "420582"
+      },
+      {
+        "dmName": "枝江市",
+        "dmCode": "420583"
+      }
+    ],
+    "status": "yes"
+  },
+  "streets": {
+    "code": 200,
+    "data": [
+      {
+        "dmName": "大公桥街办",
+        "dmCode": "420503001"
+      },
+      {
+        "dmName": "万寿桥街办",
+        "dmCode": "420503002"
+      },
+      {
+        "dmName": "宝塔河街办",
+        "dmCode": "420503003"
+      },
+      {
+        "dmName": "伍家岗街办",
+        "dmCode": "420503004"
+      },
+      {
+        "dmName": "伍家乡",
+        "dmCode": "420503201"
+      }
+    ],
+    "status": "yes"
+  },
+  "communities": {
+    "code": 200,
+    "data": [
+      {
+        "dmName": "力行街社区",
+        "dmCode": "420503001001"
+      },
+      {
+        "dmName": "金家台社区",
+        "dmCode": "420503001002"
+      },
+      {
+        "dmName": "隆康路社区",
+        "dmCode": "420503001003"
+      },
+      {
+        "dmName": "八宝塔社区",
+        "dmCode": "420503001004"
+      },
+      {
+        "dmName": "北山坡社区",
+        "dmCode": "420503001005"
+      },
+      {
+        "dmName": "大公桥社区",
+        "dmCode": "420503001006"
+      },
+      {
+        "dmName": "胜利四路社区",
+        "dmCode": "420503001007"
+      },
+      {
+        "dmName": "胜利二路社区",
+        "dmCode": "420503001008"
+      }
+    ],
+    "status": "yes"
   }
 }
