@@ -4,7 +4,8 @@
         <nav class="navbar navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">宜昌住房保障大数据平台</a>
+                    <!--<a class="navbar-brand" href="/"></a>-->
+                    <router-link class="navbar-brand" to="/home">宜昌住房保障大数据平台</router-link>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -19,9 +20,10 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.container-fluid -->
         </nav>
+        <!-- end navbar -->
 
+        <!-- begin sidebar -->
         <div class="side-bar-outer">
             <div class="side-bar" id="sideBar">
                 <div class="sidebar-fold"><span class="fa fa-bars fa-rotate-90"></span></div>
@@ -45,13 +47,10 @@
                 </div>
             </div>
         </div>
-
         <!-- end sidebar-->
 
         <!-- begin content -->
-        <router-view id="indexContent" class="content">
-
-        </router-view>
+        <router-view id="indexContent" class="content"></router-view>
         <!-- end content -->
 
         <!-- begin footer-->
@@ -84,8 +83,16 @@
         color: #fff;
     }
 
-    .dropdown {
-        /*width: 100px;*/
+    .navbar-header{
+        float: left;
+    }
+
+    .navbar-right{
+        float: right;
+    }
+
+    .navbar-nav{
+        margin: 0 -15px;
     }
 
     .dropdown .caret {
@@ -229,11 +236,12 @@
     /* end 左侧二级菜单 */
     .content {
         position: absolute;
-        top: 86px;
+        top: 50px;
         right: 0;
         left: 200px;
         bottom: 20px;
         overflow: auto;
+        padding: 20px;
     }
 
     .content.fold {

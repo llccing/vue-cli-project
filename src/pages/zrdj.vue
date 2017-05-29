@@ -12,22 +12,23 @@
 
                     <div class="form-group">
                         <label class="control-label">区县：</label>
-                        <select class="form-control w200" v-model="condition.county" >
-                            <option v-for="city in cities" value="city.dmCode">{{city.dmName}}</option>
+                        <select class="form-control w200" v-model="condition.county">
+                            <option v-for="city in cities" :value="city.dmCode">{{city.dmName}}</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label">街办：</label>
                         <select class="form-control w200" v-model="condition.street">
-                            <option v-for="street in streets" value="street.dmCode">{{street.dmName}}</option>
+                            <option v-for="street in streets" v-bind:value="street.dmCode">{{street.dmName}}</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label">社区：</label>
                         <select class="form-control w200" v-model="condition.community">
-                            <option v-for="community in communities" value="community.dmCode">{{community.dmName}}</option>
+                            <option v-for="community in communities" v-bind:value="community.dmCode">{{community.dmName}}
+                            </option>
                         </select>
                     </div>
                 </div>
@@ -111,6 +112,10 @@
         api.axios.get(api.apis.dm.cities).then(response => {
           if (response.data.code === 200 && response.data.data) {
             this.cities = response.data.data
+            this.cities.unshift({
+              'dmName': '全部',
+              'dmCode': ''
+            })
           }
         })
       },
@@ -118,6 +123,10 @@
         api.axios.get(api.apis.dm.streets).then(response => {
           if (response.data.code === 200 && response.data.data) {
             this.streets = response.data.data
+            this.streets.unshift({
+              'dmName': '全部',
+              'dmCode': ''
+            })
           }
         })
       },
@@ -125,6 +134,10 @@
         api.axios.get(api.apis.dm.communities).then(response => {
           if (response.data.code === 200 && response.data.data) {
             this.communities = response.data.data
+            this.communities.unshift({
+              'dmName': '全部',
+              'dmCode': ''
+            })
           }
         })
       },

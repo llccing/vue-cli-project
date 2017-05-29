@@ -44,7 +44,7 @@
         api.axios.get(api.apis.login).then(response => {
           if (response.data.status === 'yes' && response.data.code === 200) {
             this.USER_SIGNIN(this.form)
-            this.$router.replace({path: '/'})
+            this.$router.replace({path: '/index'})
           }
         })
       }

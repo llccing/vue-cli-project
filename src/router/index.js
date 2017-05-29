@@ -20,15 +20,17 @@ const router = new Router({
           path: '/signout',
           component: resolve => require(['../pages/signout'], resolve)
         }, {
-          path: '/home',
-          component: resolve => require(['../pages/home'], resolve)
-        }, {
-          path: '/',
-          meta: {auth: false},
-          component: resolve => require(['../pages/index'], resolve)
-        }, {
-          path: '/zrdj',
-          component: resolve => require(['../pages/zrdj'], resolve)
+          path: '/index',
+          component: resolve => require(['../pages/index'], resolve),
+          children: [
+            {
+              path: '/home',
+              component: resolve => require(['../pages/home'], resolve)
+            }, {
+              path: '/zrdj',
+              component: resolve => require(['../pages/zrdj'], resolve)
+            }
+          ]
         }, {
           path: '*', // 其他页面强制跳转登录页
           redirect: '/login'
