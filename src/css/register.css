@@ -1,0 +1,858 @@
+/*start 长度控制*/
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.form-inline .w35,
+.w35 {
+    width: 35px;
+}
+
+.form-inline .w36,
+.w36 {
+    width: 36px;
+}
+
+.form-inline .w61,
+.w61 {
+    width: 61px;
+}
+
+.form-inline .w70,
+.w70 {
+    width: 70px;
+}
+
+.form-inline .w80,
+.w80 {
+    width: 80px;
+}
+
+.form-inline .w88,
+.w88 {
+    width: 88px;
+}
+
+.form-inline .w90,
+.w90 {
+    width: 90px;
+}
+
+.form-inline .w93,
+.w93 {
+    width: 93px;
+}
+
+.form-inline .w100,
+.w100 {
+    width: 100px;
+}
+
+.w114 {
+    width: 114px;
+}
+
+.form-inline .w122,
+.w122 {
+    width: 122px;
+}
+
+.form-inline .w127,
+.w127 {
+    width: 127px;
+}
+
+.form-inline .w130,
+.w130 {
+    width: 130px;
+}
+
+.form-inline .w138,
+.w138 {
+    width: 138px;
+}
+
+.form-inline .w140,
+.w140 {
+    width: 140px;
+}
+
+.form-inline .w143,
+.w143 {
+    width: 143px;
+}
+
+.form-inline .w147,
+.w147 {
+    width: 147px;
+}
+
+.form-inline .w157,
+.w157 {
+    width: 157px;
+}
+
+.w160 {
+    width: 160px;
+}
+
+.form-inline .w166,
+.w166 {
+    width: 166px;
+}
+
+.form-inline .w170,
+.w170 {
+    width: 170px;
+}
+
+.form-inline .w172,
+.w172 {
+    width: 172px;
+}
+
+.form-inline .w180,
+.w180 {
+    width: 180px;
+}
+
+.form-inline .w188,
+.w188 {
+    width: 188px;
+}
+
+.form-inline .w190,
+.w190 {
+    width: 190px;
+}
+
+.form-inline .w200,
+.w200 {
+    width: 200px;
+}
+
+.form-inline .w637,
+.w637 {
+    width: 637px;
+}
+
+.mlr-3 {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.form-group.mr25,
+.mr25 {
+    margin-right: 25px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.w512 {
+    width: 512px;
+}
+
+.w571 {
+    width: 571px;
+}
+
+.w733 {
+    width: 733px;
+}
+
+.w756 {
+    width: 756px;
+}
+
+.fixed-table-container .table.w1200 {
+    width: 1200px;
+}
+
+i.half-word {
+    margin-right: 7px;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+/*end 长度控制*/
+
+/*start 日历 */
+.calendar {
+    display: inline-block;
+    position: relative;
+}
+
+.calendar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    right: 36px;
+    bottom: 0;
+}
+
+.calendar .calendar-date {
+    width: 122px;
+    background: url('../images/calendar.png') no-repeat 90% 50%;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.calendar .w140 {
+    width: 140px;
+}
+
+.calendar .calendar-img {
+    padding: 0 5px 0 1px;
+    cursor: default;
+}
+
+/*end 日历*/
+.register .line {
+    margin: .05rem 0;
+}
+
+.register .line-lg {
+    margin: .2rem 0;
+}
+
+.register .input[type='text'] {
+    height: .33rem;
+    padding-left: .05rem;
+    border: 1px solid #DADADA;
+    font-size: .12rem;
+}
+
+.register .label-size {
+    text-align: right;
+}
+
+.condition input[typf='text'] {
+    height: .33rem;
+    padding-left: .05rem;
+    border: 1px solid #DADADA;
+    font-size: .12rem;
+}
+
+.register .con-wrapper {
+    margin: .2rem 0;
+}
+
+.nav-wrap {
+    border-bottom: 1px solid #ccc;
+}
+
+.register .nav-tabs {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-wrap .nav-tabs li {
+    float: left;
+    margin-bottom: -1px;
+    background: #f7f7f7;
+    color: #666;
+    margin-right: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.register .nav-tabs li a,
+.register .nav-tabs li a:link,
+.register .nav-tabs li a:visited {
+    padding: 6px 12px;
+    color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.register .nav-tabs li a:hover {
+    background: #eee;
+}
+
+.register .nav-tabs li.active a,
+.register .nav-tabs li.active a:link,
+.register .nav-tabs li.active a:visited,
+.register .nav-tabs li.active a:hover {
+    background: #0cbebb;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+.register .tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* bootstrap table样式覆盖 */
+.register .tab-content .fixed-table-pagination div.pagination {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.register .table-style thead {
+    background: #f1f1f1;
+}
+
+.register .table-style thead th {
+    font-weight: 400;
+}
+
+.register .offline-deal-form .label-size {
+    width: 1.8rem;
+}
+
+.register .m-t-0 {
+    margin-top: 0 !important;
+}
+
+.register .m-b-0 {
+    margin-bottom: 0 !important;
+}
+
+.register .m-b-10 {
+    margin-bottom: .1rem;
+}
+
+.registration-modal .modal-dialog-lg {
+    width: 900px;
+}
+
+.registration-modal .modal-dialog-w670 {
+    width: 670px;
+}
+
+.registration-modal .modal-body-lg {
+    height: 600px;
+    overflow: auto;
+}
+
+.registration-modal .up-down-wrapper {
+    cursor: pointer;
+    background: #fff;
+    padding: 0 3px;
+}
+
+.registration-modal .up-down,
+.registration-modal .b-up-down {
+    padding: 3px 5px;
+}
+
+.registration-modal .up-down:hover,
+.registration-modal .b-up-down:hover {
+    cursor: pointer;
+}
+
+.registration-modal .item {
+    border: 1px solid #3490e2;
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 32px;
+}
+
+.registration-modal .table-wrapper {
+    overflow-x: auto;
+    margin: 22px 9px 0;
+}
+
+.registration-modal .table-wrapper .table-lg {
+    width: 14rem;
+}
+
+.registration-modal .table-odd-even tbody td:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+.table-th-center th {
+    text-align: center;
+}
+
+.table-td-center td {
+    text-align: center;
+}
+
+.registration-modal .table-odd-even td {
+    white-space: nowrap;
+}
+
+.registration-modal .table-odd-even td i.fa {
+    margin-left: 15px;
+    margin-right: 4px;
+}
+
+.fixed-table-toolbar {
+    display: none !important;
+    margin-top: .2rem;
+}
+
+/*设置 除第一个item外所有item内的table display:none;*/
+.registration-modal .item:not(:first-child) .table-wrapper {
+    display: none;
+}
+
+.registration-modal .item .head {
+    padding: 5px;
+    color: #333;
+    position: absolute;
+    top: -15px;
+    font-weight: bold;
+}
+
+.registration-modal .radio-normal {
+    height: .14rem;
+    vertical-align: sub;
+}
+
+.registration-modal .a-hover {
+    cursor: pointer;
+}
+
+.registration-modal .label-size {
+    width: 1.4rem;
+}
+
+/* start 补贴发放 */
+.btff-issued-sign {
+    margin-top: -37px;
+    margin-bottom: 32px;
+}
+
+/* end 补贴发放 */
+
+/*公函管理*/
+
+.register-form-table {
+    width: 100%;
+    margin-top: .1rem;
+}
+
+.register-form-table .table-input-sm input {
+    width: .8rem;
+}
+
+.doc-img-wrapper {
+    width: 8.64rem;
+    text-align: center;
+    height: 4.20rem;
+    overflow: auto;
+}
+
+.deal-result {
+    width: 100%;
+    height: 2rem;
+}
+
+.add-receive-unit2 {
+    display: none;
+    width: 594px;
+    vertical-align: top;
+}
+
+.add-checkbox-group label:first-child {
+    margin-left: 10px;
+}
+
+/*住房核查*/
+.fileupload-error {
+    color: #f00;
+}
+
+/*方案管理*/
+.part2 {
+    display: none;
+}
+
+.part2 .table-style th,
+.part2 .table-style td {
+    text-align: center;
+}
+
+.part2-content-item {
+    margin: .2rem 0;
+}
+
+.part2-content-item .item-title {
+    border-bottom: .02rem solid #ddd;
+}
+
+.draft-top-btn {
+    margin-bottom: 16px;
+}
+
+.hs-county-wrap {
+    border-bottom: .01rem solid #ddd;
+    margin-bottom: .1rem;
+    padding-bottom: .1rem;
+}
+
+.hs-condition {
+    padding-bottom: .1rem;
+}
+
+.hs-content {
+    overflow: hidden;
+}
+
+.draft-btn-choose {
+    text-align: center;
+    padding: 6px 8px;
+    position: relative;
+    left: -5px;
+    border-radius: 0;
+    vertical-align: inherit;
+}
+
+.m-l-125 {
+    margin-left: 1.25rem;
+}
+
+#assignedPersonList th {
+    cursor: pointer;
+}
+
+#assignedPersonList th:nth-child(2),
+#assignedPersonList th:nth-child(6),
+#assignedPersonList th:nth-child(7),
+#assignedPersonList th:nth-child(15),
+#assignedPersonList th:nth-child(16) {
+    cursor: default;
+}
+
+#assignedPersonList th:nth-child(3),
+#assignedPersonList th:nth-child(4),
+#assignedPersonList th:nth-child(5),
+#assignedPersonList th:nth-child(8),
+#assignedPersonList th:nth-child(9),
+#assignedPersonList th:nth-child(10),
+#assignedPersonList th:nth-child(11),
+#assignedPersonList th:nth-child(12),
+#assignedPersonList th:nth-child(13),
+#assignedPersonList th:nth-child(14) {
+    cursor: pointer;
+}
+
+/* start 人员添加 modal */
+.person-modal-condition {
+    border-bottom: .02rem solid #ccc;
+    margin-bottom: .1rem;
+}
+
+.person-modal-condition input {
+    width: 1.10rem;
+}
+
+.person-report-btn {
+    position: absolute;
+    height: .7rem;
+    top: .2rem;
+    right: .2rem;
+}
+
+/* end 人员添加 modal */
+
+/* start 展示 房源信息 */
+.show-info {
+    border: .02rem solid #ccc;
+    margin: .15rem 0;
+}
+
+.show-info-title {
+    position: relative;
+    z-index: 10;
+    bottom: .12rem;
+    left: .10rem;
+    background: #fff;
+    display: inline-block;
+    padding: 0 .10rem;
+}
+
+/* 房源信息 弹出modal 宽度 */
+.fagl-house-modal .modal-dialog {
+    width: 11rem;
+}
+
+/* 房源信息 弹出modal 宽度 */
+
+.show-info .sub-item-condition {
+    margin: 0 15px 16px;
+}
+
+.show-info .sub-item-content {
+    margin: .15rem;
+}
+
+/* end 展示 房源信息*/
+
+/* start 方案管理 选房 */
+.choose-house-split {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.choose-house input {
+    width: 1.35rem;
+}
+
+.choose-house .input-card {
+    width: 160px;
+}
+
+/* end 方案管理 选房 */
+
+/* start 方案管理 方案完成 选人安排人员查看 */
+.faglPersonInfoModal-form .form-group {
+    width: 400px;
+    margin-bottom: 16px;
+}
+
+.faglPersonInfoModal-form .control-label {
+    width: 150px;
+    text-align: right;
+}
+
+/* end 方案管理 方案完成 选人安排人员查看 */
+
+/* start 单位配租 */
+.dwpz-part2 {
+    display: none;
+}
+
+.dwpz-part2 .apply-reason-wrapper label {
+    vertical-align: top;
+}
+
+.dwpz-part2 .apply-reason-wrapper textarea {
+    width: 5.1rem;
+    height: 2rem;
+    resize: none;
+}
+
+.dwpz-form {
+    margin-top: 20px;
+}
+
+.dwpz-form .label-size {
+    width: 120px;
+}
+
+.dwpz-form .calendar .calendar-date {
+    width: 225px;
+    background-position: 95% 50%;
+}
+
+/* end 单位配租 */
+
+/* start 计划项目管理 */
+.jhxm-part2 {
+    display: none;
+}
+
+.jhxm-form-table {
+    width: 100%;
+    margin-top: .1rem;
+}
+
+.jhxm-form-table .label-size {
+    width: 1.4rem;
+}
+
+.jhxm-form-table input, .jhxm-form-table select {
+    width: 1.8rem;
+}
+
+.jhxm-form-table .jhxm-table-address {
+    width: 10.52rem;
+}
+
+.jhxm-form-table .jhxm-table-remarks {
+    width: 14.07rem;
+}
+
+/* end 计划项目管理 */
+
+/* start 计划报表 */
+.jhbb-table caption {
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+}
+
+.jhbb-table .center-sub-th th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.jhbb-table .vertical-middle {
+    vertical-align: middle;
+}
+
+.jhbb-table-wrapper .fixed-table-container {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+.jhbb-table-wrapper table thead tr th:first-child {
+    border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+}
+
+/* end 计划报表 */
+
+/* start 物业公司管理 */
+.wy-part1 .result,
+.wy-part1 .table-wrapper {
+    margin-top: 10px;
+}
+
+.wygsgl .wy-part2 {
+    display: none;
+}
+
+.part2-content {
+    margin-top: 10px;
+}
+
+.wy-part2 .basic-form-table td {
+    border-top: 0;
+}
+
+.wy-part2 .basic-form-table tr td:nth-child(odd) {
+    text-align: right;
+}
+
+.wy-part2 .basic-form-table tr td:nth-child(even) {
+    text-align: left;
+}
+
+.wy-part2 .basic-form-table tr td:nth-child(even) input,
+.wy-part2 .basic-form-table tr td:nth-child(even) select {
+    width: 100%;
+}
+
+.wygsAddProjectModal-condition label {
+    text-align: right;
+    width: 90px;
+}
+
+/* end 物业公司管理 */
+
+/* start 物业综合管理 */
+.wyzh-left {
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.pjt-tools {
+    text-align: left;
+}
+
+.pjt-content {
+    height: 100%;
+}
+
+#wyzhTree,
+.tree-override{
+    height: 100%;
+    overflow-y: auto;
+    background: #f2f2f2;
+}
+
+#wyzhTree .list-group-item:first-child,
+.tree-override .list-group-item:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#wyzhTree .list-group-item:last-child,
+.tree-override .list-group-item:last-child{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#wyzhTree .list-group-item,
+.tree-override .list-group-item{
+    background-color: initial;
+    border: 1px solid #dadada;
+}
+
+.pjt-tools span {
+    cursor: pointer;
+}
+
+.wyzh-right {
+    overflow: hidden;
+}
+
+.wyzh .bell-red {
+    color: #f31111;
+}
+
+.wyzh .bell-yellow {
+    color: #f5f50a;
+}
+
+.wyzh .bell-green {
+    color: #efef24;
+}
+
+.wyzh-right .table-wrapper {
+    margin-top: 10px;
+}
+
+.wyzh-form-table td {
+    border-top: 0 !important;
+}
+
+.wyzh-form-table tr td:nth-child(odd) {
+    text-align: right;
+}
+
+.wyzh-form-table tr td:nth-child(even) {
+    text-align: left;
+}
+
+.wyzh-form-table input,
+.wyzh-form-table select {
+    width: 100%;
+}
+
+.wyzh-table-textarea {
+    width: 100%;
+    height: 160px;
+}
+
+/* end 物业综合管理 */

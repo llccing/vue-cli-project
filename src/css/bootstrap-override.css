@@ -1,0 +1,156 @@
+.form-inline .form-group {
+    margin-right: 15px;
+}
+
+.form-inline .form-inline-mr0 {
+    margin-right: 0;
+}
+
+label.control-label {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+}
+
+label.control-label-pd10 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    padding-left: 10px;
+}
+
+.form-control {
+    height: 32px;
+    border-radius: 0;
+    padding: 6px;
+    -webkit-transition: none;
+    transition: none;
+    font-size: 12px;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ipt,
+.form-inline .ipt {
+    width: 120px;
+}
+
+.ipt-lg,
+.form-inline .ipt-lg {
+    width: 160px;
+}
+
+.form-inline .ipt-day {
+    width: 100px;
+}
+
+.ipt-day {
+    width: 100px;
+}
+
+.table-style {
+    font-size: 12px;
+}
+
+.table-style thead th {
+    font-size: 14px;
+}
+
+.nav-tabs > li > a {
+    border-radius: 0;
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+    background: #337ab7;
+}
+
+.nav-pills > li.active{
+    border-bottom-color: #3490e2;
+}
+
+.nav>li>a{
+    color: #333;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #3490e2;
+}
+
+.nav-pills>li>a {
+    border-radius: 0;
+}
+
+.nav-stacked>li {
+    border-bottom: 1px solid #dadada;
+}
+
+.nav-stacked>li+li {
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    min-width: 120px;
+}
+
+/* start bootstrap-table.css override */
+.fixed-table-container {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+.fixed-table-container thead th:first-child {
+    border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+}
+
+/* end bootstrap-table.css override */
+
+/* start bootstrap.css 分页样式覆盖 */
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-radius: 0;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: #348fe2;
+    border-color: #348fe2;
+}
+
+/* end bootstrap.css 分页样式覆盖 */
+
+/*start modal 样式覆盖*/
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    padding: 13px;
+    background: #3490e2;
+    color: #fff;
+}
+
+.close {
+    color: #fff;
+    opacity: 1;
+    font-weight: 400;
+}
+
+/*end modal 样式覆盖*/

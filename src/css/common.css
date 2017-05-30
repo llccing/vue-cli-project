@@ -3,12 +3,16 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
     margin: 0;
 }
+html, body, #pageContainer {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Microsoft YaHei', 'Times New Roman', Times, serif;
+}
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Microsoft YaHei', 'Times New Roman', Times, serif;
+/*隐藏箭头*/
+select::-ms-expand {
+  display: none;
 }
 
 .clear::after {
@@ -18,3 +22,138 @@ html, body {
     clear: both;
     visibility: hidden
 }
+
+/* 公共样式 */
+.button-lg {
+  padding: 5px 16px;
+  border: none;
+  border-radius: 2px;
+}
+
+.button-lg:focus,
+.button-lg:hover,
+.button-lg:active {
+  outline: none;
+}
+
+.button-lg[disabled] {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .65;
+}
+
+.btn-default {
+  padding: 4px .16rem;
+  border: 1px solid #ccc;
+}
+
+.btn-query:focus,
+.btn-query:hover,
+.btn-query:active {
+  color: #fff;
+}
+
+.btn-query:focus,
+.btn-query:hover,
+.btn-query:active {
+  background: #337ab7;
+  color: #fff;
+}
+
+.btn-query {
+  background: #348FE2;
+  color: #fff;
+}
+
+.btn-all:focus,
+.btn-all:hover,
+.btn-all:active {
+  background: #10abab;
+  color: #fff;
+}
+
+.btn-all {
+  background: #0DBDBD;
+  color: #fff;
+}
+
+.btn-add:focus,
+.btn-add:hover,
+.btn-add:active {
+  background: #d9534f;
+  color: #fff;
+}
+
+.btn-add {
+  background: #F16A67;
+  color: #fff;
+}
+
+label {
+  font-weight: 400;
+}
+
+select[disabled],
+input[disabled],
+input[readonly],
+textarea[disabled],
+textarea[readonly] {
+  cursor: not-allowed;
+  box-shadow: none;
+  background-color: #efefef !important;
+  border: 1px solid #ccc;
+}
+
+input, select {
+  border: 1px solid #DADADA;
+}
+
+input[type="radio"] {
+  border: none;
+}
+
+a:focus,
+input[type="radio"]:checked {
+  outline: none;
+}
+
+textarea {
+  padding-left: .05rem;
+  border: 1px solid #DADADA;
+}
+
+.m-r-30 {
+  margin-right: .3rem !important;
+}
+
+.m-r-20 {
+  margin-right: .2rem;
+}
+
+.m-l-30 {
+  margin-left: .3rem !important;
+}
+
+.m-l-20 {
+  margin-left: .2rem;
+}
+
+.text-red,
+.error {
+  color: #ff0000;
+}
+
+.text-red-star {
+  color: #ff0000;
+  position: relative;
+  top: 4px;
+  margin-right: 3px;
+}
+
+/* 表格中的分隔线 */
+.i-split {
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+@import "bootstrap-override.css";
