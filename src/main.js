@@ -10,6 +10,7 @@ import 'element-ui/lib/theme-default/index.css'
 import './assets/bootstrap/css/bootstrap.css'
 import './assets/font-awesome/css/font-awesome.min.css'
 import './css/common.css'
+import './mock/index'
 
 Vue.config.productionTip = false
 Vue.use(Element)

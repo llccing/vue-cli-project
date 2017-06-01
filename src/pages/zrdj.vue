@@ -86,6 +86,7 @@
 
 <script>
   import api from '../store/api'
+  import {fetchList, fetchPv} from '../api/table'
   export default {
     data () {
       return {
@@ -123,6 +124,14 @@
       this.setStreet()
       this.setCommunities()
       this.search()
+
+      fetchList(this.condition).then(response => {
+        alert(response)
+      })
+
+      fetchPv(this.condition).then(response => {
+        alert(response)
+      })
     },
     methods: {
       setCities () {
