@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from '../App'
 
-import store from '../store'
+// import store from '../store'
 
 Vue.use(Router)
 
@@ -41,13 +41,13 @@ const router = new Router({
 })
 
 router.beforeEach(({meta, path}, form, next) => {
-  var {auth = true} = meta
-  var isLogin = Boolean(store.state.user.name)
+  // var {auth = true} = meta
+  // var isLogin = Boolean(store.state.user.name)
   // var isLogin = true
 
-  if (auth && !isLogin && path !== '/login') {
-    return next({path: '/login'})
-  }
+  // if (auth && !isLogin && path !== '/login') {
+  //   return next({path: '/login'})
+  // }
   next()
 })
 

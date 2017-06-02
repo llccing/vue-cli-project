@@ -120,10 +120,10 @@
       }
     },
     created () {
-      this.setCities()
-      this.setStreet()
-      this.setCommunities()
-      this.search()
+//      this.setCities()
+//      this.setStreet()
+//      this.setCommunities()
+//      this.search()
 
       fetchList(this.condition).then(response => {
         alert(response)

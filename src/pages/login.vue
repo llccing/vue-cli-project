@@ -23,7 +23,7 @@
 <script>
   import {mapActions} from 'vuex'
   import {USER_SIGNIN} from '../store/user'
-  import api from '../store/api'
+  import {login} from '../api/login'
 
   export default {
     name: 'login',
@@ -41,11 +41,13 @@
       submit () {
         this.btn = true
         if (!this.form.name || !this.form.pass) return
-        api.axios.get(api.apis.login).then(response => {
+        this.$router.replace({path: '/index'})
+        login(this.form).then(response => {
           if (response.data.status === 'yes' && response.data.code === 200) {
             this.USER_SIGNIN(this.form)
-            this.$router.replace({path: '/index'})
           }
+        }).catch(error => {
+          console.log(error)
         })
       }
     }
