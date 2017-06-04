@@ -10,7 +10,9 @@
 
             <ol class="todo-list">
                 <li v-for="item in list">
-                    <input type="checkbox" v-bind:checked="item.done" @click="done(item)">
+                    <i class="fa fa-square-o fa-lg" v-if="!item.done" aria-hidden="true" @click="done(item)"></i>
+                    <i class="fa fa-check-square-o fa-lg" aria-hidden="true" v-if="item.done"  @click="done(item)"></i>
+
                     {{item.text}}
                     <button class="btn-del" type="button" @click="remove(item,$event)">del</button>
                 </li>

@@ -41,9 +41,9 @@
       submit () {
         this.btn = true
         if (!this.form.name || !this.form.pass) return
-        this.$router.replace({path: '/index'})
         login(this.form).then(response => {
           if (response.data.status === 'yes' && response.data.code === 200) {
+            this.$router.replace({path: '/index'})
             this.USER_SIGNIN(this.form)
           }
         }).catch(error => {

@@ -21,7 +21,7 @@ for (let i = 0; i < count; i++) {
 
 export default {
   getList: condig => {
-    const {name, page, limit, sort} = param2Obj(condig)
+    const {name, page, limit, sort = ''} = param2Obj(condig.url)
     let mockList = List.filter(item => {
       if (name && item.name.indexOf('name') < 0) {
         return false

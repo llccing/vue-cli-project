@@ -85,8 +85,7 @@
 </template>
 
 <script>
-  import api from '../store/api'
-  import {fetchList, fetchPv} from '../api/table'
+  import {fetchList} from '../api/table'
   export default {
     data () {
       return {
@@ -100,7 +99,10 @@
           name: '',
           beginTime: '',
           endTime: '',
-          guaranteeType: '2'
+          guaranteeType: '2',
+          page: 1,
+          sort: '-id',
+          limit: 10
         },
 
         cities: [],
@@ -109,66 +111,31 @@
 
         communities: [],
 
-        columns: ['id', 'name', 'age'],
-        tableData: [
-          {id: 1, name: 'John', age: '20'},
-          {id: 2, name: 'Jane', age: '24'},
-          {id: 3, name: 'Susan', age: '16'},
-          {id: 4, name: 'Chris', age: '55'},
-          {id: 5, name: 'Dan', age: '40'}
-        ]
+        columns: [],
+
+        tableData: []
       }
     },
     created () {
-//      this.setCities()
-//      this.setStreet()
-//      this.setCommunities()
-//      this.search()
-
       fetchList(this.condition).then(response => {
-        alert(response)
-      })
-
-      fetchPv(this.condition).then(response => {
-        alert(response)
+        console.log(response)
+        return response.data.items
+      }).then(data => {
+        this.columns = Object.keys(data[0])
+        this.tableData = data
+      }).catch(error => {
+        console.log(error)
       })
     },
     methods: {
       setCities () {
-        api.axios.get(api.apis.dm.cities).then(response => {
-          if (response.data.code === 200 && response.data.data) {
-            console.log('cities1')
-            this.cities = response.data.data
-            this.cities.unshift({
-              'dmName': '全部',
-              'dmCode': ''
-            })
-          }
-        })
+
       },
       setStreet () {
-        api.axios.get(api.apis.dm.streets).then(response => {
-          if (response.data.code === 200 && response.data.data) {
-            console.log('streets')
-            this.streets = response.data.data
-            this.streets.unshift({
-              'dmName': '全部',
-              'dmCode': ''
-            })
-          }
-        })
+
       },
       setCommunities () {
-        api.axios.get(api.apis.dm.communities).then(response => {
-          if (response.data.code === 200 && response.data.data) {
-            console.log('communities')
-            this.communities = response.data.data
-            this.communities.unshift({
-              'dmName': '全部',
-              'dmCode': ''
-            })
-          }
-        })
+
       },
       search () {
         console.log('get list')
