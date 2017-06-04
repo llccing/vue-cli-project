@@ -12,7 +12,6 @@
                 <li v-for="item in list">
                     <i class="fa fa-square-o fa-lg" v-if="!item.done" aria-hidden="true" @click="done(item)"></i>
                     <i class="fa fa-check-square-o fa-lg" aria-hidden="true" v-if="item.done"  @click="done(item)"></i>
-
                     {{item.text}}
                     <button class="btn-del" type="button" @click="remove(item,$event)">del</button>
                 </li>
@@ -43,7 +42,7 @@
     methods: {
       // 添加
       addItem () {
-        if (this.item) {
+        if (this.item.text) {
           this.list.push(this.item)
           this.item = {}
           sessionStorage.setItem('todoList', JSON.stringify({

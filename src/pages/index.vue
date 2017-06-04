@@ -24,29 +24,7 @@
         <!-- end navbar -->
 
         <!-- begin sidebar -->
-        <div class="side-bar-outer">
-            <div class="side-bar" id="sideBar">
-                <div class="sidebar-fold"><span class="fa fa-bars fa-rotate-90"></span></div>
-                <div class="sidebar-nav">
-                    <div data-title="zlbt" class="nav-parent">
-                        <div class="nav-title">
-                            <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-
-                            <span class="fa fa-caret-down fa-rotate-0 nav-caret"></span>
-                            <router-link to="/zrdj"><span class="title-name">准入登记管理</span></router-link>
-                        </div> <div class="nav-title">
-                            <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-                            <span class="title-name">保障配给规则定制</span>
-                            <span class="fa fa-caret-down fa-rotate-0 nav-caret"></span>
-                        </div> <div class="nav-title">
-                            <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-                            <span class="title-name">准入规则定制</span>
-                            <span class="fa fa-caret-down fa-rotate-0 nav-caret"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <side-bar></side-bar>
         <!-- end sidebar-->
 
         <!-- begin content -->
@@ -62,6 +40,7 @@
 <script>
   import {mapState} from 'vuex'
   import logo from '../images/logo.png'
+  import sideBar from '../components/sideBar.vue'
 
   export default {
     data () {
@@ -69,7 +48,10 @@
         logo
       }
     },
-    computed: mapState({user: state => state.user})
+    computed: mapState({user: state => state.user}),
+    components: {
+      sideBar
+    }
   }
 </script>
 
@@ -83,15 +65,15 @@
         color: #fff;
     }
 
-    .navbar-header{
+    .navbar-header {
         float: left;
     }
 
-    .navbar-right{
+    .navbar-right {
         float: right;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         margin: 0 -15px;
     }
 
@@ -106,131 +88,6 @@
     #setUp:hover {
         background: #2881d0;
         color: #fff;
-    }
-
-    .side-bar-outer {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 70px;
-    }
-
-    .side-bar {
-        height: 100%;
-        overflow-y: auto;
-        margin-top: 50px;
-        background: #293038;
-        color: #fff;
-        font-size: .14rem;
-        width: 200px;
-    }
-
-    .side-bar.fold {
-        width: 50px;
-    }
-
-    .sidebar-fold {
-        padding: 8px 0;
-        text-align: center;
-        background: #394555;
-        cursor: pointer;
-    }
-
-    .sidebar-nav div.single {
-        cursor: pointer;
-        line-height: 40px;
-        padding: 0 .15rem;
-    }
-
-    .sidebar-nav div.single img {
-        padding-right: .15rem;
-    }
-
-    .sidebar-nav div.single span {
-        display: inline-block;
-        padding-right: .1rem;
-    }
-
-    .sidebar-nav div.single:hover {
-        background: #37424F;
-    }
-
-    .sidebar-nav > div.single.active {
-        background: #348FE2;
-    }
-
-    /* start 左侧二级菜单 */
-
-    .nav-parent .nav-title {
-        height: 40px;
-        line-height: 40px;
-        padding: 0 .15rem;
-    }
-
-    .nav-parent .nav-title img {
-        padding-right: 6px;
-    }
-
-    .nav-parent .nav-title span.title-name {
-        display: inline-block;
-        padding-right: .3rem;
-    }
-
-    .nav-parent .nav-title:hover {
-        background: #37424F;
-    }
-
-    .nav-parent.active .nav-title {
-        background: #348FE2;
-    }
-
-    .nav-title .nav-caret {
-        float: right;
-        line-height: 40px;
-    }
-
-    .nav-body {
-        display: none;
-        line-height: 30px;
-        background: #43525e;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        font-size: 12px;
-    }
-
-    .nav-body li a:link,
-    .nav-body li a:visited,
-    .nav-body li a:hover {
-        color: #9ea1a3;
-        text-decoration: none;
-        display: block;
-        margin-left: 24px;
-        border-left: 1px solid #556375;
-        padding-left: 24px;
-        position: relative;
-    }
-
-    .nav-body li:first-child a {
-        padding-top: 10px;
-    }
-
-    .nav-body li:first-child a img.nav-circle {
-        top: 19px;
-    }
-
-    .nav-body li:last-child a {
-        padding-bottom: 10px;
-    }
-
-    .nav-body li.active a {
-        color: #fefefe;
-    }
-
-    .nav-body .nav-circle {
-        position: absolute;
-        left: -7px;
-        top: 9px;
     }
 
     /* end 左侧二级菜单 */
