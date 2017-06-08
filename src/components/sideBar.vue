@@ -4,19 +4,21 @@
             <div class="sidebar-fold"><span class="fa fa-bars fa-rotate-90"></span></div>
             <div class="sidebar-nav">
                 <div data-title="zlbt" class="nav-parent">
-                    <div class="nav-title" v-bind:class="{active: isActive}">
-                        <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-                        <router-link to="/home"><span class="title-name">例子</span></router-link>
-                    </div>
 
-                    <div class="nav-title" v-bind:class="{active: isActive}">
+                    <router-link v-bind:class="{active: isActive === 'home'}" class="nav-title" tag="div" to="/home">
                         <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-                        <router-link to="/zrdj"><span class="title-name">准入登记管理</span></router-link>
-                    </div>
-                    <div class="nav-title" v-bind:class="{active: currentActive}">
+                        <span>例子</span>
+                    </router-link>
+
+                    <router-link v-bind:class="{active: isActive === 'zrdj'}" class="nav-title" tag="div" to="/zrdj">
                         <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
-                        <router-link to="/zrdj"><span class="title-name">echarts</span></router-link>
-                    </div>
+                        <span>准入登记管理</span>
+                    </router-link>
+
+                    <router-link v-bind:class="{active: isActive === 'signout'}" class="nav-title" tag="div" to="/signout">
+                        <img src="../images/04.png" data-toggle="tooltip" data-placement="right" title="租赁补贴管理">
+                        <span>signout</span>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -27,14 +29,17 @@
   export default {
     data () {
       return {
-        isActive: true
+        isActive: 'home'
       }
     },
-    computed: {
-      currentActive () {
-        console.log(this.$router)
-        return !this.isActive
+    methods: {
+      currentUrl () {
+        this.isActive = this.$router.app.$route.path.substr(1)
+        console.log(this.$router.app.$route.path.substr(1))
       }
+    },
+    watch: {
+      '$route': 'currentUrl'
     }
   }
 </script>
@@ -118,6 +123,10 @@
 
     .nav-parent .nav-title:hover {
         background: #37424F;
+    }
+
+    .nav-parent .nav-title.active:hover {
+        background: #348FE2;
     }
 
     .nav-parent.active .nav-title {

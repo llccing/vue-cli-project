@@ -17,7 +17,7 @@ const router = new Router({
           meta: {auth: false},
           component: resolve => require(['../pages/login'], resolve)
         }, {
-          path: '/signout',
+          path: '/signout1',
           component: resolve => require(['../pages/signout'], resolve)
         }, {
           path: '/index',
@@ -29,6 +29,9 @@ const router = new Router({
             }, {
               path: '/zrdj',
               component: resolve => require(['../pages/zrdj'], resolve)
+            }, {
+              path: '/signout',
+              component: resolve => require(['../pages/signout'], resolve)
             }
           ]
         }, {
