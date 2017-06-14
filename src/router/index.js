@@ -32,6 +32,9 @@ const router = new Router({
             }, {
               path: '/signout',
               component: resolve => require(['../pages/signout'], resolve)
+            }, {
+              path: '/forms',
+              component: resolve => require(['../pages/forms/form1'], resolve)
             }
           ]
         }, {

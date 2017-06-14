@@ -7,18 +7,18 @@
                     <!--<a class="navbar-brand" href="/"></a>-->
                     <router-link class="navbar-brand" to="/home">宜昌住房保障大数据平台</router-link>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="setUp">
-                            <span id="user"></span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#" id="changePwd">修改密码</a></li>
-                            <li><a href="#" id="logout">退出</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="setUp">-->
+                <!--<span id="user"></span>-->
+                <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" role="menu">-->
+                <!--<li><a href="#" id="changePwd">修改密码</a></li>-->
+                <!--<li><a href="#" id="logout">退出</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--</ul>-->
             </div>
         </nav>
         <!-- end navbar -->
@@ -32,7 +32,7 @@
         <!-- end content -->
 
         <!-- begin footer-->
-        <div class="footer navbar-fixed-bottom text-center">技术支持 : 北京博图纵横科技有限责任公司</div>
+        <div class="footer text-center">技术支持 : 北京博图纵横科技有限责任公司</div>
         <!-- end footer-->
     </div>
 </template>
@@ -51,6 +51,7 @@
     computed: mapState({user: state => state.user}),
     components: {
       sideBar
+
     }
   }
 </script>
@@ -58,11 +59,16 @@
 <style scoped>
     .navbar {
         background: #348FE2;
+        height: 50px;
     }
 
     .navbar-brand,
     .navbar-brand:hover {
         color: #fff;
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 20px;
+        margin-left: 10px;
     }
 
     .navbar-header {
@@ -99,6 +105,7 @@
         bottom: 20px;
         overflow: auto;
         padding: 20px;
+        min-width: 1024px;
     }
 
     .content.fold {
@@ -189,6 +196,11 @@
     .footer {
         background: #348FE2;
         color: #fff;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
     }
 
 </style>
