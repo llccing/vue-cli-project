@@ -35,6 +35,9 @@ const router = new Router({
             }, {
               path: '/forms',
               component: resolve => require(['../pages/forms/form1'], resolve)
+            }, {
+              path: '/users',
+              component: resolve => require(['@/pages/users/list'], resolve)
             }
           ]
         }, {

@@ -17,7 +17,12 @@
                         <el-menu-item index="1-4-1">选项1</el-menu-item>
                     </el-submenu>
                 </el-submenu>
-                <el-menu-item index="2">导航二</el-menu-item>
+                <el-submenu index="2">
+                    <template slot="title">系统管理</template>
+                    <router-link index="2-1" to="/users" class="meun-indent">
+                        <el-menu-item index="2-2">用户管理</el-menu-item>
+                    </router-link>
+                </el-submenu>
                 <el-menu-item index="3">导航三</el-menu-item>
             </el-menu>
         </div>
